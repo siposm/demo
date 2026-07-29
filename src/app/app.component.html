@@ -4,14 +4,25 @@
 	<table class="table table-sm table-striped table-bordered mb-5">
 		<thead>
 			<tr>
-				<th>Placeholder #1</th>
-				<th>Placeholder #2</th>
+				<th>name</th>
+				<th>email</th>
+				<th>age</th>
+				<th>job</th>
+				<th>salary</th>
+				<th>skills</th>
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>Placeholder #1</td>
-				<td>Placeholder #2</td>
+			<tr *ngFor="let item of apiService.developers">
+				<td>
+					<img src="{{ item.image }}" width="50" class="rounded-circle">
+					{{ item.name }}
+				</td>
+				<td>{{ item.email }}</td>
+				<td>{{ item.age }}</td>
+				<td>{{ item.salary }}</td>
+				<td>{{ item.job }}</td>
+				<td>{{ item.skills }}</td>
 			</tr>
 		</tbody>
 	</table>
