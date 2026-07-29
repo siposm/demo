@@ -1,0 +1,4 @@
+tr.selected-row > td {
+	background-color: rgb(255, 225, 225) !important;
+	box-shadow: none !important;
+}
